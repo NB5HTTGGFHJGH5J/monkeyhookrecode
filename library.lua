@@ -17,11 +17,6 @@ function Library:Window(Name, Color, SizeY)
     local Tabs = Instance.new("Frame")
     local oldTab
     getgenv().WindowThemeColor = Color
-    if Main.Visible then
-        game:GetService("UserInputService").MouseBehavior = Enum.MouseBehavior.Default
-        else
-        game:GetService("UserInputService").MouseBehavior = Enum.MouseBehavior.LockCenter
-    end
     for _, gui in next, CoreGui:GetChildren() do
         if gui.Name == Name then
             gui:Destroy()
