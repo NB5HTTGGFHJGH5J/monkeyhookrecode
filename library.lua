@@ -16,6 +16,11 @@ function Library:Window(Name, Color, SizeY)
     local TabsListLayout = Instance.new("UIListLayout")
     local Tabs = Instance.new("Frame")
     local oldTab
+    if Main.Visible then
+        game:GetService("UserInputService").MouseBehavior = Enum.MouseBehavior.Default
+        else
+        game:GetService("UserInputService").MouseBehavior = Enum.MouseBehavior.LockCenter
+    end
     getgenv().WindowThemeColor = Color
     for _, gui in next, CoreGui:GetChildren() do
         if gui.Name == Name then
