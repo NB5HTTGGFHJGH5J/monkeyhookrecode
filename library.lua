@@ -1252,5 +1252,5 @@ Section:Color("Color", function(color)
 end)
 Section:Dropdown("Choice", {"None", "A", "B"}, function(type)
     print(type)
-end)
+end)h
 --]]
